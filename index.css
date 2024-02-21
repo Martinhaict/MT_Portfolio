@@ -1,0 +1,161 @@
+body{
+	margin: 0;
+	background-color: #FFF3F2;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Roboto Slab;
+  font-size: 25px;
+  color: #E5D7BC;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 60px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: #E5D7BC;
+  padding: 10px 15px;
+  border: none;
+  position: fixed;
+  margin-left: 5PX;
+}
+
+.openbtn:hover {
+  background-color: #lightsteelblue;
+  font-family: Parisienne;
+  font-size: 17px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+  position: relative;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+
+
+
+.quadro {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	padding: 0 4px;
+	margin-top: 80px;
+	margin-bottom: 25px;
+
+
+}
+
+.coluna {
+	-ms-flex: 25%;
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 15px;
+}
+
+.coluna img{
+	margin-top: 15px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+	.coluna {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.coluna {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+
+
+
+
+
+.individual {
+	position: relative;
+	background-color: red;
+	margin-left: 5px;
+
+}
+
+.image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.demasiado {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.individual:hover .image {
+	opacity: 0.6;
+}
+
+.individual:hover .demasiado {
+	opacity: 1;
+}
+
+.texto {
+	color: floralwhite;
+	font-size: 22px;
+	position: middle;
+	font-family: futura;
+}
+
+
+
+
