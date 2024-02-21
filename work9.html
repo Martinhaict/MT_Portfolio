@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Revista</title>
+
+		<link rel="stylesheet" type="text/css" href="work.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto+Slab:wght@300&family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<div id="mySidebar" class="sidebar">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  		<a href="index.html">Home</a>
+  		<a href="about.html">Sobre mim</a>
+  		<a href="work1.html">Trabalhos</a>
+  		<a href="contact.html">Contacto</a>
+	</div>
+
+	<div id="main">
+ 		 <!-- <button class="openbtn" onclick="openNav()">☰ <img src="img_new/meulogo.png" style="height: 30px;"></button>  -->
+ 		 <button class="openbtn" onclick="openNav()">☰ MT </button>
+	</div>
+
+	<script>
+		function openNav() {
+ 		document.getElementById("mySidebar").style.width = "250px";
+  		document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+  		document.getElementById("mySidebar").style.width = "0";
+  		document.getElementById("main").style.marginLeft= "0";
+		}
+	</script>
+
+<div class="troca">
+			<a href="work1.html"> 1 </a>
+			<a href="work2.html"> 2 </a>
+			<a href="work3.html"> 3 </a>
+			<a href="work4.html"> 4 </a>
+			<a href="work5.html"> 5 </a>
+			<a href="work6.html"> 6 </a>
+			<a href="work7.html"> 7 </a>
+			<a href="work8.html"> 8 </a>
+			<a href="work9.html"> <span> 9 </span> </a>
+			<a href="work10.html"> 10 </a>
+			<a href="work11.html"> 11 </a>
+			<a href="work12.html"> 12 </a>
+			<a href="work13.html"> 13 </a>
+			<a href="work14.html"> 14 </a>
+		</div>
+	<h1> Campo & Jardim </h1>
+
+	<p> Redesign da estrutura da revista Campo & Jardim. </p>
+
+	
+	<div class="galeria">
+  		<div class="mySlides">
+    		<div class="numbertext">1 / 7</div>
+    		<img src="img/portfolio9.jpg" style="width:80%">
+ 		 </div>
+
+  		<div class="mySlides">
+  			<div class="numbertext">2 / 7</div>
+   			<img src="imagens/1.jpg" style="width:80%">
+  		</div>
+
+ 		 <div class="mySlides">
+   			<div class="numbertext">3 / 7</div>
+    		<img src="imagens/2.jpg" style="width:80%">
+  		</div>
+    
+  		<div class="mySlides">
+    		<div class="numbertext">4 / 7</div>
+    		<img src="imagens/03.jpg" style="width:80%">
+  		</div>
+
+  		<div class="mySlides">
+    		<div class="numbertext">5 / 7</div>
+    		<img src="imagens/4.jpg" style="width:80%">
+  		</div>
+    
+  		<div class="mySlides">
+  			<div class="numbertext">6 / 7</div>
+  		  	<img src="imagens/5.jpg" style="width:80%">
+  		</div>
+
+  		<div class="mySlides">
+    		<div class="numbertext">7 / 7</div>
+    		<img src="imagens/6.jpg" style="width:80%">
+  		</div>
+
+  	</div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>
