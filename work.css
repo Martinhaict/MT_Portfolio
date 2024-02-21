@@ -1,0 +1,211 @@
+body{
+  margin: 0;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Roboto Slab;
+  font-size: 25px;
+  color: #E5D7BC;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: #E5D7BC;
+  padding: 10px 15px;
+  border: none;
+  position: fixed;
+  margin-left: 5PX;
+}
+
+.openbtn:hover {
+  background-color: #lightsteelblue;
+  font-family: Parisienne;
+  font-size: 17px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+  position: relative;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+h1{
+  position: absolute;
+  width: 520px;
+  height: 110px;
+  left: 110px;
+  top: 182px;
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+p{
+  position: absolute;
+  width: 740px;
+  height: 194px;
+  left: 600px;
+  top: 195px;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: right;
+}
+
+.uma{
+  position: relative;
+  width: 811px;
+  height: 1059px;
+  left: 400px;
+  top: 400px;
+}
+
+
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.galeria {
+  position: relative;
+  top: 350px;
+  margin-left: 300px;
+  margin-right: 150px;
+  padding-bottom:50px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 750px;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #939393;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-left: 300px;
+  margin-right: 348px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 20px;
+  position: relative;
+  top: 30px;
+  font-family: 'Roboto Slab';
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.troca{
+  margin-left: 1100px;
+}
+
+.troca a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto Slab';
+  word-spacing: 3px;
+}
+
+span{
+  font-size: 25px;
+
+}
+
+video {
+  padding-left: 100px;
+  margin-bottom: 20px;
+}
+
+.gifs {
+  padding-left: 100px;
+}
+
+
+
